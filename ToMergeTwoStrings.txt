@@ -1,0 +1,22 @@
+package com.leetcode;
+
+public class ToMergeTwoStrings
+{
+
+	public static void main(String[] args) 
+	{
+		String word1="abc";
+		String word2="efg";
+		String word3="";
+		String []merge=word1.split("");
+		String [] merge1=word2.split("");
+		for(int i=0;i<=word2.length()-1;i=i+1)
+		{
+			String element1=merge[i];
+			String element2=merge1[i];
+			word3=element1.concat(element2);
+			System.out.print(word3);
+		}
+	}
+
+}
